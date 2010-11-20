@@ -1,13 +1,9 @@
-#summary One-sentence summary of this page.
+#summary any IRCd Module here.
 
-= Introduction =
+= Your IRCd Modules = 
 
-Add your content here.
-
+This is for any IRCd Module
 
 = Details =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+Submit your Module by posting it in a comment. 
