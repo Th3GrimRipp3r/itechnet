@@ -1,8 +1,8 @@
-#summary Any flavor of an IRCd, Module here.
+#summary -IRCd-, Module here.
 
 = Your IRCd Modules = 
 
-This is for any IRCd Module
+This is for any IRCd Module <br>ie. Unreal, InspIRCd, Ratbox
 
 = Details =
 
