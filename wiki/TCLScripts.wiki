@@ -1,13 +1,10 @@
-#summary One-sentence summary of this page.
+#summary TCL scripts here.
 
-= Introduction =
+= TCL Scripts = 
 
-Add your content here.
-
+This is for any TCL script. 
+TCL is mostly used for Egg Drop bots.
 
 = Details =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+Submit your scripts by posting them in a comment. 
