@@ -1,13 +1,9 @@
-#summary One-sentence summary of this page.
+#summary IRC -Services- Module here.
 
-= Introduction =
+= IRC Services Modules = 
 
-Add your content here.
-
+This is for any type of IRC services <br> ie. Anope. Epona, IRCServices, Ect
 
 = Details =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+Submit your moduless by posting them in a comment. 
