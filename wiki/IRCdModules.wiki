@@ -1,4 +1,4 @@
-#summary any IRCd Module here.
+#summary Any flavor of an IRCd, Module here.
 
 = Your IRCd Modules = 
 
