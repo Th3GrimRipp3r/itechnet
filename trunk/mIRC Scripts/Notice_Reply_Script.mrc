@@ -4,4 +4,5 @@ on *:NOTICE:*:*: {
 
 alias rp {
   notice %ln. [ $+ [ $network ] ] $$1-
+  .unset %ln. [ $+ [ $network ] ]
 }
