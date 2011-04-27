@@ -46,5 +46,5 @@ proc recode { textin } {
   return [string map {&quot; \" &middot; · &amp; &} [subst [regsub -nocase -all {&#([0-9]{1,5});} $textin {\u\1}]]]
 }
 bind pub - ${xblchar}xbl xblinfo
-setudef flag +xblinfo
+setudef flag xblinfo
 putlog "Xbox Live Gamertag status' by Danneh/GrimReaper"
