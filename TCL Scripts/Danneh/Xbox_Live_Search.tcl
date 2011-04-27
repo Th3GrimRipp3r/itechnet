@@ -19,7 +19,7 @@ proc xblinfo {nick host hand chan search} {
 	} else {
 	  set xblsrcurl1 [urlencode [regsub -all { } $search +]]
 	  set xblsrcurl2 "/en-GB/member/${xblsrcurl1}"
-	  if {[catch {set xblsrcsock [socket -async $xblsite 80]} sockerr]}
+	  if {[catch {set xblsrcsock [socket -async $xblsite 80]} sockerr]} {
 	    putlog "$xbosite $xbosrcurl2 $sockerr error"
 		return 0
       } else {
@@ -32,6 +32,12 @@ proc xblinfo {nick host hand chan search} {
 		  set xblstatus " [gets $xblsrcsock] "
 		  if {[regexp {<div id="CurrentActivity">(.*)<\/div>} $xblstatus match xbluserstatus]} {
 		    putserv "PRIVMSG $chan :$xbllogo [recode "${xbluserstatus}"]"
+	      }
+		}
+      }
+	}
+  }
+}
 	  
 proc urlencode {string} {
   return [subst [regsub -nocase -all {([^a-z0-9+])} $string {%[format %x [scan "\\&" %c]]}]]
