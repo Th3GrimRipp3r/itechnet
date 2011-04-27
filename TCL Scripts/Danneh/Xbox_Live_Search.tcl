@@ -33,12 +33,14 @@ proc xblinfo {nick host hand chan search} {
           if {$xblstatusfound == "on"} {
             putserv "PRIVMSG $chan :$xbllogo [recode "${xblstatus}"]"
             close $xblsrcsock
+			return 0
           }
           if {[regexp -all {<div id="CurrentActivity">} $xblstatus]} {
             set xblstatusfound "on"
           }
         }
         close $xblsrcsock
+		return 0
       }
     }
   }
