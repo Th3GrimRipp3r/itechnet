@@ -12,7 +12,7 @@ set xblchar "."
 
 proc xblinfo {nick host hand chan search} {
   if {[lsearch -exact [channel info $chan] +xblinfo] != -1} {
-    set xbllogo "\0039X\00314box Live\003"
+    set xbllogo "\0030,9Xbox\003 Live"
     set xblsite "Live.xbox.com"
     set xblstatusfound "off"
     if {$search == ""} {
