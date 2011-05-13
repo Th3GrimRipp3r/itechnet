@@ -1,3 +1,13 @@
+;----------------------------------------------------------------------------
+; * Name    :    Random Kick w/Reason
+; * Author  :    Radien (brandon)
+;                IRC: channel #damdevil in irc.tornadoircc.om
+;                Web: http://code.google.com/p/itechnet
+; * Version :    0.1
+; * Date    :    May 13th, 2011
+; * Notes   :    Place in your Aliases and Press F5 after you clicked a nick
+;----------------------------------------------------------------------------
+
 ;Aliases Script!
 F5 { set %sniped $rand(1,7) 
   if (%sniped == 1) /kick $chan $$1 Everyone hates you so why not just leave? 
