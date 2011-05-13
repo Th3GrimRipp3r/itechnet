@@ -1,4 +1,14 @@
-;This is an ALIASES Script!
+;----------------------------------------------------------------------------
+; * Name    :    Random Slap
+; * Author  :    Radien (brandon)
+;                IRC: channel #damdevil in irc.tornadoircc.om
+;                Web: http://code.google.com/p/itechnet
+; * Version :    0.1
+; * Date    :    May 13th, 2011
+; * Notes   :    Place in Aliases and press Shift F11 to random slap 
+;                After you click a nick in the nicklist
+;----------------------------------------------------------------------------
+
 sF11 { set %slap $rand(1,9) 
   if (%slap == 1) /me slaps $$1 around a bit with a large trout 
   if (%slap == 2) /me slaps $$1 around a bit with a large penis

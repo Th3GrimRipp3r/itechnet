@@ -1,3 +1,14 @@
+;----------------------------------------------------------------------------
+; * Name    :    DNS
+; * Author  :    Radien (brandon)
+;                IRC: channel #damdevil in irc.tornadoircc.om
+;                Web: http://code.google.com/p/itechnet
+; * Version :    0.1
+; * Date    :    May 13th, 2011
+; * Notes   :    Type /dns IP/website/ircserver/nick to see all entries for
+;                Given thing.
+;----------------------------------------------------------------------------
+
 ;dns: $dns(%n) nick: $dns(%n).nick 4addr: $dns(%n).addr ip: $dns(%n).ip 
 on *:DNS:{
   var %n = $dns(0)

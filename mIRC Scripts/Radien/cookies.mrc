@@ -1,3 +1,14 @@
+;----------------------------------------------------------------------------
+; * Name    :    Cookies
+; * Author  :    Radien (brandon) orginally Phil of GeekShed
+;                IRC: channel #damdevil in irc.tornadoircc.om
+;                Web: http://code.google.com/p/itechnet
+; * Version :    0.1
+; * Date    :    May 13th, 2011
+; * Notes   :    Type /cookies *nick* (-/+)#of cookies
+;                You don't need the + if your giving cookies
+;----------------------------------------------------------------------------
+
 alias cookies {
   if ($1 != $null && $2 != $null) {
     unset %cookiesval
