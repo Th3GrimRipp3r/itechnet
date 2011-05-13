@@ -1,3 +1,13 @@
+;----------------------------------------------------------------------------
+; * Name    :    Anope Services Alias
+; * Author  :    Radien (brandon)
+;                IRC: channel #damdevil in irc.tornadoircc.om
+;                Web: http://code.google.com/p/itechnet
+; * Version :    0.1
+; * Date    :    May 13th, 2011
+; * Notes   :    You type /vop, /chop, /aop, /sop and then The Nick
+;----------------------------------------------------------------------------
+
 alias vop {
   cs vop $active add $$1
   if ($1 ison $active) { cs sync $active }
