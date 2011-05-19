@@ -1,9 +1,5 @@
 menu * {
-  mIRC calculator:mirccalc
-}
-
-alias -l mirccalc {
-  $iif($dialog(calculator),dialog -v,dialog -m calculator) calculator
+  mIRC calculator:dialog $iif($dialog(calculator),-v,-m calculator) calculator
 }
 
 dialog calculator {
