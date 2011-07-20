@@ -3,18 +3,18 @@
 #####################################################
 ##                 Initial Setup                   ##
 #####################################################
-
+ 
 set xblchar "."
-
+ 
 #####################################################
 ##                    End Setup                    ##
 #####################################################
-
+ 
 proc xblinfo {nick host hand chan search} {
   if {[lsearch -exact [channel info $chan] +xblinfo] != -1} {
-    set xbllogo "\0030,9Xbox\003 Live"
+    set xbllogo "\0039X\00314box Live\003"
     set xblsite "Live.xbox.com"
-    set xblstatusfound "off"
+    set xblstatusfound "0"
     if {$search == ""} {
       putserv "PRIVMSG $chan :$xbllogo, Please enter a GamerTag to search for.."
     } else {
@@ -30,9 +30,9 @@ proc xblinfo {nick host hand chan search} {
         puts $xblsrcsock ""
         flush $xblsrcsock
         while {![eof $xblsrcsock]} {
-          set xblstatus " [gets $xblsrcsock] "
+          set xblstatus "[gets $xblsrcsock]"
           if {$xblstatusfound == "on"} {
-            putserv "PRIVMSG $chan :$xbllogo status for $search:  [recode "${xblstatus}"]"
+            putserv "PRIVMSG $chan :$xbllogo status for \0037$search\003: [string trimleft [recode "${xblstatus}"]]"
             close $xblsrcsock
             return 0
           }
@@ -40,17 +40,18 @@ proc xblinfo {nick host hand chan search} {
             set xblstatusfound "on"
           }
         }
+	 putserv "PRIVMSG $chan :Sorry, I couldn't find \0037$search\003 on $xbllogo"
         close $xblsrcsock
         return 0
       }
     }
   }
 }
-
+ 
 proc encurl {string} {
   return [string map {" " %20} "$string"]
 }
-          
+ 
 proc urlencode {string} {
   return [subst [regsub -nocase -all {([^a-z0-9+])} $string {%[format %x [scan "\\&" %c]]}]]
 }
