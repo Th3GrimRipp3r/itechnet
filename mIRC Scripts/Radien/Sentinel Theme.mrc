@@ -2,6 +2,12 @@
 ;Copyright wh1tel1te 2005
 ;Last updated 28/2/2006
 ;Contact: irc.linuxniche.net #chat   scripts\sentineltheme.ini
+;;
+;;
+;;; Edited by Radien
+;;; Last Updated 10/18/2011
+;;; Contact: irc://irc.damdevil.org -j #damdevil
+;;; 
 
 ;This script is used to change the way mIRC looks easily and effectively, set away status with various options,
 ;and set various auto settings, such as auto nickserv identify. To use, right click on a channel and use the popups to change settings.
@@ -515,7 +521,7 @@ on *:input:#: {
         var %prefix = $left($nick($chan, $me).pnick, 1)
         if (%prefix != ~) && (%prefix != &) && (%prefix != @) && (%prefix != %) && (%prefix != +) unset %prefix
       }
-      echo -ti2bflm # $+(, %stheme.pcolour, %stheme.leftnickchar, , %stheme.scolour, %prefix, , %stheme.selfnickcolour, $me, , %stheme.pcolour, %stheme.rightnickchar, , $iif(%stheme.owntextcolour , %stheme.owntextcolour,  ), %ownmessage)
+      echo -ti2bflm # $+(, %stheme.pcolour, %stheme.leftnickchar, , %stheme.scolour, %prefix, , %stheme.selfnickcolour, $me, , %stheme.pcolour, %stheme.rightnickchar, , $iif(%stheme.owntextcolour , %stheme.owntextcolour,  ), %ownmessage)
       inc %stheme.words $0
       inc %stheme.sentences 1
     }
@@ -545,7 +551,7 @@ on *:input:#: {
             var %prefix = $left($nick($chan, $me).pnick, 1)
             if (%prefix != ~) && (%prefix != &) && (%prefix != @) && (%prefix != %) && (%prefix != +) unset %prefix
           }
-          echo -ti2bflm # $+(, %stheme.pcolour, %stheme.leftnickchar, , %stheme.scolour, %prefix, , %stheme.selfnickcolour, $me, , %stheme.pcolour, %stheme.rightnickchar, , $iif(%stheme.owntextcolour , %stheme.owntextcolour,  ), %ownmessage)
+          echo -ti2bflm # $+(, %stheme.pcolour, %stheme.leftnickchar, , %stheme.scolour, %prefix, , %stheme.selfnickcolour, $me, , %stheme.pcolour, %stheme.rightnickchar, , $iif(%stheme.owntextcolour , %stheme.owntextcolour,  ), %ownmessage)
           inc %stheme.words $0
           inc %stheme.sentences 1
         }
