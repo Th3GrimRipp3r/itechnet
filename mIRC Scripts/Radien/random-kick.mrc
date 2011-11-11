@@ -1,8 +1,8 @@
 ;----------------------------------------------------------------------------
 ; * Name    :    Random Kick w/Reason
 ; * Author  :    Radien (brandon)
-;                IRC: channel #damdevil in irc.tornadoircc.om
-;                Web: http://code.google.com/p/itechnet
+;                IRC: channel #damdevil in irc.tornadoirc.com
+;                Web: http://code.google.com/p/itechnet/source/browse/trunk/mIRC%20Scripts/Radien/
 ; * Version :    0.1
 ; * Date    :    May 13th, 2011
 ; * Notes   :    Place in your Aliases and Press F5 after you clicked a nick
