@@ -9,7 +9,7 @@
 ;                Given thing.
 ;----------------------------------------------------------------------------
 
-;dns: $dns(%n) nick: $dns(%n).nick 4addr: $dns(%n).addr ip: $dns(%n).ip 
+;dns: $dns(%n) nick: $dns(%n).nick addr: $dns(%n).addr ip: $dns(%n).ip 
 on *:DNS:{
   var %n = $dns(0)
   echo -ati2l -  -[Found %n address(es)]-
