@@ -9,9 +9,10 @@
 ;----------------------------------------------------------------------------
 
 alias bnc {
-  if ($1- == TornadoIRC) { server -m irc.example.com:8890 user:pass }
-  if ($1- == FireFlyIRC) { server -m irc.example.com:8890 user:pass }
-  if ($1- == GeekShed) { server -m irc.example.com:8890 user:pass }
-  if ($1- == AllredNC) { server -m irc.example.com:8890 user:pass }
+  if ($$1 == $null) { echo -at * Error: Incorrect syntax used: /bnc <NetworkBNC to connect to> | HALT }
+  if ($$1 == TornadoIRC) { server -m irc.example.com:8890 user:pass }
+  if ($$1 == FireFlyIRC) { server -m irc.example.com:8890 user:pass }
+  if ($$1 == GeekShed) { server -m irc.example.com:8890 user:pass }
+  if ($$1 == AllredNC) { server -m irc.example.com:8890 user:pass }
 }
 
