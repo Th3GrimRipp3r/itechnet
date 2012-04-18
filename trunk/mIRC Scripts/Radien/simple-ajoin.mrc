@@ -1,10 +1,10 @@
 ;----------------------------------------------------------------------------
-; * Name    :    Simple Auto JOin
+; * Name    :    Simple Auto Join
 ; * Author  :    Radien (brandon)
-;                IRC: channel #damdevil in irc.tornadoirc.com
+;                IRC: channel #damdevil in irc.damdevil.org
 ;                Web: http://code.google.com/p/itechnet/source/browse/trunk/mIRC%20Scripts/Radien/
 ; * Version :    0.1
-; * Date    :    May 13th, 2011
+; * Date    :    April 18th, 2012
 ; * Notes   :    Edit Data and place in remotes.
 ;----------------------------------------------------------------------------
 
@@ -17,7 +17,8 @@ server -m irc.example.com
 }
 
 on *:connect: {
-if ($network == TornadoIRC) { nick Radien | msg nickserv id somepass | join #lobby,#damdevil }
+if ($network == TornadoIRC) { nick Radien | msg nickserv id somepass | join #lobby,#damdevil,#as,#many,#channels,#here,#as,#you,#want }
 if ($network == FireFlyIRC) { nick Radien | msg nickserv id somepass | join #firefly,#damdevil }
-if ($network == iPocalypse) { nick Radien | msg nickserv id somepass | join #hell }
+if ($network == iPocalypse) { nick Radien | msg nickserv id somepass | join #firefly,#damdevil }
+if ($server == some.irc.server) { nick Radien | msg nickserv id somepass | join #firefly,#damdevil }
 }
