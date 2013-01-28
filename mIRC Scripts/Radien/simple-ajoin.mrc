@@ -9,7 +9,7 @@
 ;----------------------------------------------------------------------------
 
 on *:start: {
-server irc.tornadoirc.com
+server irc.damdevil.org
 server -m irc.ffirc.me.uk
 server -m irc.ipocalypse.net
 server -m irc.geekshed.net
